@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PipeLine</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_start">GAME START</string>
+    <string name="btn_option">OPTION</string>
+    <string name="label_stage">STAGE</string>
+    <string name="btn_go">GO</string>
+    <string name="desc_block">ゲームで使用するブロック</string>
+</resources>

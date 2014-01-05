@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <!-- ステージNo タイマー -->
+    <LinearLayout
+        android:id="@+id/PlayHeader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#006400"
+    >
+        <TextView
+            android:id="@+id/StageNo"
+            android:text="@string/label_stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+        />
+        <Chronometer
+            android:id="@+id/Timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+        />
+    </LinearLayout>
+
+    <!-- ゲーム本体 -->
+    <GridLayout
+        android:id="@+id/GameBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:columnWidth="30dp"
+        android:stretchMode="columnWidth"
+        android:layout_below="@id/PlayHeader"
+        android:background="#000000"
+        android:columnCount="3"
+        android:rowCount="3"
+    >
+    </GridLayout>
+</RelativeLayout>
